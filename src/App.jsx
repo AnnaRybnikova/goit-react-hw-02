@@ -37,7 +37,10 @@ function App() {
         resetFeedbacks={resetFeedbacks}
       />
       {(totalFeedback > 0)
-        ? <Feedback feedbacks={feedbacks} />
+        ? <Feedback
+          feedbacks={feedbacks}
+          totalFeedback={totalFeedback}
+          positiveFeedbackPercentage={Math.round((feedbacks.Good / totalFeedback) * 100)} />
         : <Notification />}
     </>
   )

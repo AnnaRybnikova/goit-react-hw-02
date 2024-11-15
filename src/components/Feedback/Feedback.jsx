@@ -1,17 +1,23 @@
 import PropTypes from "prop-types";
 
-const Feedback = ({ feedbacks }) => {
+const Feedback = ({ feedbacks, totalFeedback, positiveFeedbackPercentage }) => {
   return (
-      <ul>
+      <div>
+          <ul>
               {Object.keys(feedbacks).map((option) => {
                   return <li key={option}>{option}: {feedbacks[option]}</li>
               })}
-      </ul>
+          </ul>
+          <p>Total: {totalFeedback}</p>
+          <p>Positive: {positiveFeedbackPercentage}%</p>
+      </div>
   )
 }
 
 Feedback.propTypes = {
-    feedbacks: PropTypes.object.isRequired
+    feedbacks: PropTypes.object.isRequired,
+    totalFeedback: PropTypes.number.isRequired,
+    positiveFeedbackPercentage: PropTypes.number.isRequired
 };
 
 export default Feedback
