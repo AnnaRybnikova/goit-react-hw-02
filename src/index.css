@@ -1,4 +1,4 @@
-:root {
+/* :root {
 }
 
 *,
@@ -12,9 +12,9 @@ body {
   line-height: 1.5;
   color: black;
   background-color: white;
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -22,11 +22,11 @@ h5,
 h6,
 p {
   margin: 0;
-}
+} */
 
 ul,
 ol {
-  margin: 0;
+  margin-left: 0;
   padding: 0;
 }
 
@@ -34,7 +34,7 @@ li {
   list-style-type: none;
 }
 
-img {
+/* img {
   display: block;
   max-width: 100%;
 }
@@ -42,20 +42,20 @@ img {
 a {
   text-decoration: none;
   font-style: normal;
-}
+} */
 
-input {
+/* input {
   font-family: inherit;
   outline: transparent;
-}
+} */
 
-textarea {
+/* textarea {
   font-family: inherit;
   outline: transparent;
-}
+} */
 
-button {
+/* button {
   font-family: inherit;
   color: currentColor;
   border: none;
-}
+} */
