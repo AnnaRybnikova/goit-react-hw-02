@@ -1,15 +1,18 @@
+import s from "./Feedback.module.css";
 import PropTypes from "prop-types";
 
 const Feedback = ({ feedbacks, totalFeedback, positiveFeedbackPercentage }) => {
   return (
       <div>
-          <ul>
+          <ul className={s.feedback_list}>
               {Object.keys(feedbacks).map((option) => {
-                  return <li key={option}>{option}: {feedbacks[option]}</li>
+                  return <li className={s.feedback_list_item} key={option}>
+                      {option}: {feedbacks[option]}
+                  </li>
               })}
           </ul>
-          <p>Total: {totalFeedback}</p>
-          <p>Positive: {positiveFeedbackPercentage}%</p>
+          <p className={s.feedback_item}>Total: {totalFeedback}</p>
+          <p className={s.feedback_item}>Positive: {positiveFeedbackPercentage}%</p>
       </div>
   )
 }

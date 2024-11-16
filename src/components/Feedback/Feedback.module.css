@@ -1,0 +1,6 @@
+.feedback_list,
+.feedback_list_item:not(:last-child),
+.feedback_item {
+    margin: 0;
+    margin-bottom: 10px;
+}
